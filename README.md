@@ -12,8 +12,7 @@ A modern, lightweight, and accessible front-end e-commerce site for a hijab clot
     - Python: `python -m http.server`
     - Node: `npx serve`
 
-## 🎨 Image Generation (Gemini / Banana)
-
+## 🎨 Image Generation with Ai
 Since this is a mock project, all images are placeholders. To generate high-quality images for the 30 products, use the following prompt template with an AI image generator.
 
 **Base Prompt Template:**
@@ -71,3 +70,4 @@ Editable templates are provided for:
 - Cookie Policy
 
 *Disclaimer: These are generic templates. Consult a legal professional for actual use.*
+
