@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hijab Clothing | Modern Modest Fashion</title>
+    <meta name="description"
+        content="Discover our premium collection of hijabs, from silk chiffon to jersey wraps. Modern, modest, and elegant styles for every occasion.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:title" content="Hijab Clothing | Modern Modest Fashion">
+    <meta property="og:description"
+        content="Discover our premium collection of hijabs, from silk chiffon to jersey wraps. Modern, modest, and elegant styles for every occasion.">
+    <meta property="og:image" content="https://example.com/assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://example.com/">
+    <meta property="twitter:title" content="Hijab Clothing | Modern Modest Fashion">
+    <meta property="twitter:description"
+        content="Discover our premium collection of hijabs, from silk chiffon to jersey wraps. Modern, modest, and elegant styles for every occasion.">
+    <meta property="twitter:image" content="https://example.com/assets/images/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Hijab Clothing",
+      "url": "https://example.com",
+      "logo": "https://example.com/assets/icons/logo.png",
+      "sameAs": [
+        "https://facebook.com/hijabclothing",
+        "https://instagram.com/hijabclothing"
+      ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Hijab Clothing</a>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="products.html" class="nav-link">Shop All</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section (Slider) -->
+    <header class="hero" id="hero-slider"
+        style="position: relative; height: 600px; overflow: hidden; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
+        <!-- Slides -->
+        <div class="hero-slide active"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 1; transition: opacity 1s ease;">
+            <img src="assets/images/p001-hero.png" alt="Sage Green Silk Hijab"
+                style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);">
+        </div>
+        <div class="hero-slide"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0; transition: opacity 1s ease;">
+            <img src="assets/images/p002-hero.png" alt="Dusty Rose Jersey Hijab"
+                style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);">
+        </div>
+        <div class="hero-slide"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0; transition: opacity 1s ease;">
+            <img src="assets/images/p003-hero.png" alt="Midnight Blue Silk Hijab"
+                style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);">
+        </div>
+
+        <!-- Content Overlay -->
+        <div class="container fade-in" style="position: relative; z-index: 1;">
+            <h1 class="mb-md" style="color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Elegance in Every Fold</h1>
+            <p class="mb-lg"
+                style="font-size: var(--font-size-xl); max-width: 600px; margin-inline: auto; color: rgba(255,255,255,0.9); text-shadow: 0 1px 2px rgba(0,0,0,0.3);">
+                Discover our premium collection of breathable, stylish, and comfortable hijabs designed for the modern
+                woman.
+            </p>
+            <a href="products.html" class="btn btn-primary"
+                style="background-color: white; color: var(--color-text-main); border: none;">Shop Collection</a>
+        </div>
+    </header>
+
+    <!-- Featured Products Carousel -->
+    <section class="container mt-lg mb-lg">
+        <div class="flex justify-between items-center mb-md">
+            <h2>Featured Arrivals</h2>
+            <a href="products.html" class="btn btn-secondary">View All</a>
+        </div>
+
+        <div id="featured-carousel" class="grid"
+            style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); min-height: 400px;">
+            <!-- Products injected via JS -->
+            <div class="skeleton-loader"
+                style="height: 400px; background: var(--color-bg-secondary); border-radius: var(--border-radius-lg);">
+            </div>
+            <div class="skeleton-loader"
+                style="height: 400px; background: var(--color-bg-secondary); border-radius: var(--border-radius-lg);">
+            </div>
+            <div class="skeleton-loader"
+                style="height: 400px; background: var(--color-bg-secondary); border-radius: var(--border-radius-lg);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories / CTA -->
+    <section class="container mb-lg">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <div class="card" style="background-color: #E8F3F1; border: none;">
+                <div class="card-content text-center" style="padding: var(--spacing-xl);">
+                    <h3>Premium Silk</h3>
+                    <p>Luxurious drape for special occasions.</p>
+                    <a href="products.html?category=Silk" class="btn btn-secondary mt-sm">Explore Silk</a>
+                </div>
+            </div>
+            <div class="card" style="background-color: #FDF2F2; border: none;">
+                <div class="card-content text-center" style="padding: var(--spacing-xl);">
+                    <h3>Everyday Jersey</h3>
+                    <p>Comfort and stretch for daily wear.</p>
+                    <a href="products.html?category=Jersey" class="btn btn-secondary mt-sm">Explore Jersey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4 class="footer-heading">Hijab Clothing</h4>
+                <p>Modern modest fashion for everyone.</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="products.html?category=New">New Arrivals</a></li>
+                    <li><a href="products.html?category=Best">Best Sellers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="shipping.html">Shipping & Returns</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center mt-lg"
+            style="border-top: 1px solid var(--color-border); padding-top: var(--spacing-md);">
+            <p>&copy; 2023 Hijab Clothing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/ui.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

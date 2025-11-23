@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medina Silk Hijab - Emerald | Hijab Clothing</title>
+    <meta name="description" content="Jewel-toned emerald green Medina silk hijab.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Medina Silk Hijab - Emerald | Hijab Clothing">
+    <meta property="og:description" content="Jewel-toned emerald green Medina silk hijab.">
+    <meta property="og:image" content="assets/images/p013-hero.webp">
+    <meta property="og:type" content="product">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Medina Silk Hijab - Emerald",
+      "image": [
+        "assets/images/p013-hero.webp",
+        "assets/images/p013-detail.webp",
+        "assets/images/p013-lifestyle.webp"
+       ],
+      "description": "Make a statement with our Emerald Medina Silk Hijab. The vibrant jewel tone commands attention, while the premium fabric ensures a flawless drape.",
+      "sku": "MSH-EMERALD-013",
+      "brand": {
+        "@type": "Brand",
+        "name": "Hijab Clothing"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "product-p013.html",
+        "priceCurrency": "USD",
+        "price": "30.00",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Hijab Clothing</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Shop All</a>
+                <a href="products.html?category=Silk" class="nav-link">Silk</a>
+                <a href="products.html?category=Jersey" class="nav-link">Jersey</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn btn-ghost" aria-label="Toggle Dark Mode">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon" style="display:none;">🌙</span>
+                </button>
+                <a href="cart.html" class="btn btn-ghost cart-btn" aria-label="Cart">
+                    🛒
+                    <span class="cart-badge" style="display: none;">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="container mt-md">
+        <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
+            <a href="index.html">Home</a> / <a href="products.html">Shop</a> / Medina Silk Hijab - Emerald
+        </p>
+    </div>
+
+    <!-- Product Detail -->
+    <main class="container mt-md mb-2xl">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl);">
+
+            <!-- Image Gallery -->
+            <div class="product-gallery">
+                <div class="main-image mb-sm"
+                    style="aspect-ratio: 3/4; overflow: hidden; border-radius: var(--border-radius-lg); background: var(--color-bg-secondary);">
+                    <img id="main-img" src="assets/images/p013-hero.webp" alt="Medina Silk Hijab - Emerald"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="thumbnails flex" style="gap: var(--spacing-xs);">
+                    <button class="thumb-btn" onclick="changeImage('assets/images/p013-hero.webp')"
+                        style="border: none; background: none; cursor: pointer; width: 80px; aspect-ratio: 1; border-radius: var(--border-radius-sm); overflow: hidden;">
+                        <img src="assets/images/p013-hero.webp" alt="Hero view" style="width: 100%; height: 100%; object-fit: cover;">
+                    </button>
+                    <button class="thumb-btn" onclick="changeImage('assets/images/p013-detail.webp')"
+                        style="border: none; background: none; cursor: pointer; width: 80px; aspect-ratio: 1; border-radius: var(--border-radius-sm); overflow: hidden;">
+                        <img src="assets/images/p013-detail.webp" alt="Detail view"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </button>
+                    <button class="thumb-btn" onclick="changeImage('assets/images/p013-lifestyle.webp')"
+                        style="border: none; background: none; cursor: pointer; width: 80px; aspect-ratio: 1; border-radius: var(--border-radius-sm); overflow: hidden;">
+                        <img src="assets/images/p013-lifestyle.webp" alt="Lifestyle view"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 class="mb-xs">Medina Silk Hijab - Emerald</h1>
+                <p class="price mb-md"
+                    style="font-size: var(--font-size-xl); color: var(--color-primary); font-weight: 600;">$30.00
+                </p>
+
+                <div class="description mb-lg">
+                    <p>Make a statement with our Emerald Medina Silk Hijab. The vibrant jewel tone commands attention, while the premium fabric ensures a flawless drape.</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Color</label>
+                    <div class="flex flex-wrap" style="gap: 0.5rem;">
+                        <!-- Static for now, could be dynamic if multiple colors per product -->
+                        <span
+                            style="padding: 0.5rem 1rem; border: 1px solid var(--color-border); border-radius: var(--border-radius-sm); background: var(--color-bg-secondary);">Emerald</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Quantity</label>
+                    <div class="flex items-center" style="gap: 0.5rem;">
+                        <button class="btn btn-secondary" onclick="adjustQty(-1)">-</button>
+                        <input type="number" id="qty-input" value="1" min="1"
+                            style="width: 60px; text-align: center; padding: 0.5rem; border: 1px solid var(--color-border); border-radius: var(--border-radius-sm);">
+                        <button class="btn btn-secondary" onclick="adjustQty(1)">+</button>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary"
+                    style="width: 100%; padding-block: 1rem; font-size: var(--font-size-lg);" onclick="addToCart()">
+                    Add to Cart
+                </button>
+
+                <div class="mt-lg">
+                    <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
+                        <strong>SKU:</strong> MSH-EMERALD-013<br>
+                        <strong>Category:</strong> Silk<br>
+                        <strong>Tags:</strong> medina silk, green, jewel tone, luxury
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4 class="footer-heading">Hijab Clothing</h4>
+                <p>Modern modest fashion for everyone.</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="products.html?category=New">New Arrivals</a></li>
+                    <li><a href="products.html?category=Best">Best Sellers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="shipping.html">Shipping & Returns</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center mt-lg"
+            style="border-top: 1px solid var(--color-border); padding-top: var(--spacing-md);">
+            <p>&copy; 2023 Hijab Clothing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/ui.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        // Inline script for product page specific interactions
+        function changeImage(src) {
+            document.getElementById('main-img').src = src;
+        }
+
+        function adjustQty(delta) {
+            const input = document.getElementById('qty-input');
+            let val = parseInt(input.value) + delta;
+            if (val < 1) val = 1;
+            input.value = val;
+        }
+
+        function addToCart() {
+            const qty = parseInt(document.getElementById('qty-input').value);
+            // We need to reconstruct the product object or pass the ID
+            // Since this is a static page, we can hardcode the ID in the template
+            const product = {
+                id: 'p013',
+                name: 'Medina Silk Hijab - Emerald',
+                price: {{ price }
+        },
+        images: { hero: 'assets/images/p013-hero.webp' }
+            };
+        Cart.add(product, qty);
+        }
+    </script>
+</body>
+
+</html>

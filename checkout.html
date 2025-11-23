@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Hijab Clothing</title>
+    <meta name="description" content="Secure checkout for your order.">
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Navbar (Simplified for checkout) -->
+    <nav class="navbar">
+        <div class="container nav-container justify-center">
+            <a href="index.html" class="nav-logo">Hijab Clothing</a>
+        </div>
+    </nav>
+
+    <!-- Checkout Content -->
+    <main class="container mt-lg mb-2xl">
+        <h1 class="text-center mb-lg">Secure Checkout</h1>
+
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl);">
+
+            <!-- Payment Form -->
+            <div class="checkout-form">
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="mb-md">Payment Details</h3>
+
+                        <form id="payment-form">
+                            <div class="form-group">
+                                <label for="card-name" class="form-label">Cardholder Name</label>
+                                <input type="text" id="card-name" class="form-input" placeholder="Jane Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="card-number" class="form-label">Card Number</label>
+                                <div style="position: relative;">
+                                    <input type="text" id="card-number" class="form-input"
+                                        placeholder="0000 0000 0000 0000" maxlength="19" required>
+                                    <span id="card-brand"
+                                        style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 1.2rem;">💳</span>
+                                </div>
+                            </div>
+
+                            <div class="flex" style="gap: var(--spacing-md);">
+                                <div class="form-group" style="flex: 1;">
+                                    <label for="card-expiry" class="form-label">Expiry Date</label>
+                                    <input type="text" id="card-expiry" class="form-input" placeholder="MM/YY"
+                                        maxlength="5" required>
+                                </div>
+                                <div class="form-group" style="flex: 1;">
+                                    <label for="card-cvc" class="form-label">CVC</label>
+                                    <input type="text" id="card-cvc" class="form-input" placeholder="123" maxlength="4"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="mt-md">
+                                <button type="submit" id="pay-btn" class="btn btn-primary" style="width: 100%;">Pay
+                                    Now</button>
+                            </div>
+
+                            <p id="payment-error"
+                                style="color: var(--color-error); display: none; margin-top: 1rem; text-align: center;">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary (Read Only) -->
+            <div class="order-summary">
+                <div class="card" style="background-color: var(--color-bg-secondary);">
+                    <div class="card-content">
+                        <h3 class="mb-md">Order Summary</h3>
+                        <div id="checkout-items" class="mb-md" style="max-height: 300px; overflow-y: auto;">
+                            <!-- Injected via JS -->
+                        </div>
+
+                        <div class="flex justify-between mb-sm"
+                            style="border-top: 1px solid var(--color-border); padding-top: var(--spacing-sm);">
+                            <span>Total</span>
+                            <span id="checkout-total" style="font-weight: 600;">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2023 Hijab Clothing. All rights reserved.</p>
+            <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+                This is a demo store. No real payments are processed.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/ui.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>

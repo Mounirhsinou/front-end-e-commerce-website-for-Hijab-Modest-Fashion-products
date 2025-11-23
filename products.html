@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All | Hijab Clothing</title>
+    <meta name="description"
+        content="Browse our complete collection of high-quality hijabs. Filter by material, color, and style to find your perfect match.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shop All | Hijab Clothing">
+    <meta property="og:description" content="Browse our complete collection of high-quality hijabs.">
+    <meta property="og:image" content="https://example.com/assets/images/og-shop.jpg">
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Hijab Clothing</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link active">Shop All</a>
+                <a href="products.html?category=Silk" class="nav-link">Silk</a>
+                <a href="products.html?category=Jersey" class="nav-link">Jersey</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn btn-ghost" aria-label="Toggle Dark Mode">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon" style="display:none;">🌙</span>
+                </button>
+                <a href="cart.html" class="btn btn-ghost cart-btn" aria-label="Cart">
+                    🛒
+                    <span class="cart-badge" style="display: none;">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="container mt-lg mb-md text-center">
+        <h1>Our Collection</h1>
+        <p>Find the perfect hijab for any occasion.</p>
+    </header>
+
+    <!-- Filters -->
+    <section class="container mb-md">
+        <div class="flex flex-wrap justify-between items-center"
+            style="gap: 1rem; padding: 1rem; background: var(--color-bg-secondary); border-radius: var(--border-radius-md);">
+            <div class="flex flex-wrap" style="gap: 1rem;">
+                <select id="filter-category" class="form-input" style="width: auto; padding-right: 2rem;">
+                    <option value="">All Categories</option>
+                    <option value="Chiffon">Chiffon</option>
+                    <option value="Jersey">Jersey</option>
+                    <option value="Silk">Silk</option>
+                    <option value="Cotton">Cotton</option>
+                    <option value="Modal">Modal</option>
+                    <option value="Georgette">Georgette</option>
+                    <option value="Viscose">Viscose</option>
+                    <option value="Square">Square Scarf</option>
+                    <option value="Instant">Instant</option>
+                    <option value="Pleated">Pleated</option>
+                </select>
+
+                <select id="filter-color" class="form-input" style="width: auto; padding-right: 2rem;">
+                    <option value="">All Colors</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Beige">Beige</option>
+                    <option value="Grey">Grey</option>
+                </select>
+            </div>
+
+            <div class="flex items-center" style="gap: 0.5rem;">
+                <label for="sort-price" class="form-label" style="margin: 0;">Sort by:</label>
+                <select id="sort-price" class="form-input" style="width: auto; padding-right: 2rem;">
+                    <option value="default">Featured</option>
+                    <option value="low-high">Price: Low to High</option>
+                    <option value="high-low">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <main class="container mb-2xl">
+        <div id="product-grid" class="grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+            <!-- Products injected via JS -->
+            <div class="skeleton-loader"
+                style="height: 350px; background: var(--color-bg-secondary); border-radius: var(--border-radius-lg);">
+            </div>
+            <div class="skeleton-loader"
+                style="height: 350px; background: var(--color-bg-secondary); border-radius: var(--border-radius-lg);">
+            </div>
+            <div class="skeleton-loader"
+                style="height: 350px; background: var(--color-bg-secondary); border-radius: var(--border-radius-lg);">
+            </div>
+            <div class="skeleton-loader"
+                style="height: 350px; background: var(--color-bg-secondary); border-radius: var(--border-radius-lg);">
+            </div>
+        </div>
+        <div id="no-results" class="text-center mt-xl" style="display: none;">
+            <h3>No products found</h3>
+            <p>Try adjusting your filters.</p>
+            <button id="clear-filters" class="btn btn-secondary mt-sm">Clear Filters</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4 class="footer-heading">Hijab Clothing</h4>
+                <p>Modern modest fashion for everyone.</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="products.html?category=New">New Arrivals</a></li>
+                    <li><a href="products.html?category=Best">Best Sellers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="shipping.html">Shipping & Returns</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center mt-lg"
+            style="border-top: 1px solid var(--color-border); padding-top: var(--spacing-md);">
+            <p>&copy; 2023 Hijab Clothing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/ui.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+
+</html>
